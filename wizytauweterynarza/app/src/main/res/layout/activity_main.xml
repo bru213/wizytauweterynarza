@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#90EE90">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wizyta u weterynarza"
+        android:textSize="30dp"
+        android:background="#2E8B57"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Imię i nazwisko właściciela..."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gatunek"/>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="186dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ile ma lat?:" />
+
+        <TextView
+            android:id="@+id/lat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginHorizontal="20dp"/>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:max="18"
+            android:progress="0" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/cel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="cel wizyty..."/>
+
+
+    <TimePicker
+        android:id="@+id/czas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />>
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"/>
+
+    <TextView
+        android:id="@+id/wynik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+
+</LinearLayout>
