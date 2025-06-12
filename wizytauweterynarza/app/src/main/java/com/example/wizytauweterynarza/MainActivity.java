@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        String[] gat = {"pies", "kot", "świnka morska"};
+        String[] get = {"pies", "kot", "świnka morska"};
 
         ListView list = findViewById(R.id.list);
         EditText name = findViewById(R.id.name);
